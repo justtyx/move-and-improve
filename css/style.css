@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --mm-colour: rgb(0, 147, 190);
+    --main-font: 'Open Sans', 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 195, 255), var(--mm-colour));
+    /* background-color: rgb(0, 195, 255); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    margin: 1rem;
+}
+
+@media (min-width: 1024px) {
+    main {
+        margin: 0 20%;
+    }
+}
+
+header {
+    margin: 1rem 0.1rem 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10vw;
+    min-width: 150px;
+}
+
+.some>a>img {
+    width: 2vw;
+    height: auto;
+    margin: 0 0.1rem;
+    min-width: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text {
+    margin-bottom: 1.2rem;
+    grid-column: 1/2;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 4vw, 5rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(1rem, 2vw, 4rem);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: clamp(0.9rem, 2vw, 3rem);
+}
+
+.slideshow {
+    grid-column: 2/3;
+    justify-self: center;
+
+    width: 80%;
+    margin-bottom: 1.2rem;
+}
+
+.slides {
+    width: 100%;
+    height: auto;
+}
+
+#campaign-vid {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    min-width: 350px;
+}
+
+.video {
+    margin-bottom: 1.2rem;
+    width: 100%;
+
+    grid-column: 1/3;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+.form-cont {
+    grid-column: 1/3;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    border-radius: 5px;
+    font-size: clamp(1.1rem, 1vw, 1.4rem);
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+#form_email {
+    width: 80%;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+button {
+    background-color: rgb(0, 195, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    display: block;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 102, 133);
+}
+
+button:active {
+    background-color: rgb(0, 195, 255);
+}
+
+footer {
+    margin: 2rem 0.1rem 0.1rem;
+    padding-top: 1rem;
+    border-top: 2px solid white;
+}
+
+footer p {
+    font-size: 0.7rem
+}
+
+.slide-in {
+    animation: slide-in;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
