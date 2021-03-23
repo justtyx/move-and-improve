@@ -22,7 +22,8 @@ body {
 
 @media (min-width: 1024px) {
     main {
-        margin: 0 20%;
+        max-width: 800px;
+        margin: auto;
     }
 }
 
