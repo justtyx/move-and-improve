@@ -27,12 +27,12 @@
             <p>We believe in a possibility for a healthier lifestyle!</p>
         </div>
         <div class="slideshow">
-            <img src="media/red.png" alt="red Me-Mover" class="slides">
-            <img src="media/blue.png" alt="blue Me-Mover" class="slides">
-            <img src="media/grey.png" alt="grey Me-Mover" class="slides">
-            <img src="media/orange.png" alt="orange Me-Mover" class="slides">
-            <img src="media/dark-blue.png" alt="dark blue Me-Mover" class="slides">
-            <img src="media/green.png" alt="green Me-Mover" class="slides">
+            <img src="media/red.webp" alt="red Me-Mover" class="slides">
+            <img src="media/blue.webp" alt="blue Me-Mover" class="slides">
+            <img src="media/grey.webp" alt="grey Me-Mover" class="slides">
+            <img src="media/orange.webp" alt="orange Me-Mover" class="slides">
+            <img src="media/dark-blue.webp" alt="dark blue Me-Mover" class="slides">
+            <img src="media/green.webp" alt="green Me-Mover" class="slides">
         </div>
         <div class="video">
             <video id="campaign-vid" controls>
@@ -48,7 +48,11 @@
                 <input type="text" name="surname" placeholder="Johnson" id="form_surname" required />
                 <label for="form_email">Email</label>
                 <input type="email" name="email" placeholder="john@mail.dk" id="form_email" required />
-                <button type="button">Send</button>
+                <div class="storing-data">
+                    <input type="checkbox" id="form_agreement" required>
+                    <label for="form_agreement" class="agreement">I agree with Me-Mover's data storing policy.</label>
+                </div>
+                <button type="submit">Send</button>
             </form>
         </div>
     </main>
