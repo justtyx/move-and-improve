@@ -2,6 +2,7 @@
 window.addEventListener('load', slideText);
 
 function slideText() { 
+  document.querySelector('.text').classList.remove('hidden');
   document.querySelector('.text').classList.add('slide-in');
  }
 
